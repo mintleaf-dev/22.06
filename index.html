@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Расписание уроков</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff; /* світло-сірий фон */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    .schedule-table-wrap {
+      width: 100%;
+      max-width: 700px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      padding: 24px 16px;
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #b2ebf2;
+      padding: 10px 8px;
+      text-align: center;
+      font-size: 1rem;
+      vertical-align: middle;
+    }
+    th {
+      background-color: #e0f7fa;
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+    .day-header {
+      background-color: #b2ebf2;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+    @media (max-width: 600px) {
+      .schedule-table-wrap {
+        padding: 8px 2px;
+        max-width: 100vw;
+      }
+      th, td {
+        font-size: 0.9rem;
+        padding: 6px 2px;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <div class="schedule-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ДЕНЬ</th>
+          <th>ВРЕМЯ</th>
+          <th>ПРЕДМЕТ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="day-header">
+          <td rowspan="4">ПН</td>
+          <td>8:30 - 9:50</td>
+          <td>Біол.-екол. модуль / Фіз. культура</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:20</td>
+          <td>Операційні системи / ООП</td>
+        </tr>
+        <tr>
+          <td>11:50 - 13:10</td>
+          <td>ООП</td>
+        </tr>
+        <tr>
+          <td>13:20 - 14:40</td>
+          <td>Операційні системи</td>
+        </tr>
+
+        <tr class="day-header">
+          <td rowspan="2">ВТ</td>
+          <td>8:30 - 9:50</td>
+          <td>Украинская литература</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:20</td>
+          <td>Біол.-екол. модуль</td>
+        </tr>
+
+        <tr class="day-header">
+          <td rowspan="4">СР</td>
+          <td>8:30 - 9:50</td>
+          <td>Фізико-астроном. модуль</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:20</td>
+          <td>Англійська мова</td>
+        </tr>
+        <tr>
+          <td>11:50 - 13:10</td>
+          <td>Алгебра та поч. аналізу</td>
+        </tr>
+        <tr>
+          <td>13:20 - 14:40</td>
+          <td>Фіз. культура</td>
+        </tr>
+
+        <tr class="day-header">
+          <td rowspan="3">ЧТ</td>
+          <td>8:30 - 9:50</td>
+          <td>Соціологія</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:20</td>
+          <td>Основи програм. та алг. мови / Історія України</td>
+        </tr>
+        <tr>
+          <td>11:50 - 13:10</td>
+          <td>Основи програм. та алг. мови</td>
+        </tr>
+
+        <tr class="day-header">
+          <td rowspan="3">ПТ</td>
+          <td>8:30 - 9:50</td>
+          <td>Українська мова</td>
+        </tr>
+        <tr>
+          <td>10:00 - 11:20</td>
+          <td>Геометрія</td>
+        </tr>
+        <tr>
+          <td>11:50 - 13:10</td>
+          <td>Історія України</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
